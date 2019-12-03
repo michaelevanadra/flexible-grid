@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, ButtonGroup, Button } from 'reactstrap';
+import { Container, ButtonGroup } from 'reactstrap';
 
 import Grid from './components/Grid';
 
@@ -14,8 +14,15 @@ function App() {
       <A.Wrapper theme={themeMode}>
         <Container>
           <ButtonGroup>
-            <Button onClick={() => selectThemeMode('light')}>Light</Button>
-            <Button onClick={() => selectThemeMode('dark')}>Dark</Button>
+            <A.Button
+              theme={themeMode}
+              onClick={() => selectThemeMode('light')}
+            >
+              Light
+            </A.Button>
+            <A.Button theme={themeMode} onClick={() => selectThemeMode('dark')}>
+              Dark
+            </A.Button>
           </ButtonGroup>
           <Grid />
         </Container>
