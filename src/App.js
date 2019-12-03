@@ -36,6 +36,7 @@ function App() {
 
           <A.Panel>
             <h1>Flexible Grid</h1>
+            <h3>Demo</h3>
             <h3>Reusable Component</h3>
 
             <A.CodePanel theme={themeMode}>
