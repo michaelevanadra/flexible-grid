@@ -4,11 +4,13 @@ import { Container, ButtonGroup } from 'reactstrap';
 import * as gridConfig from './config/grid';
 
 import { GridParent, GridChild, Grid } from './components/Grid';
+import SampleGrid from './components/SampleGrid';
 
 import * as A from './style';
 
 function App() {
   const [themeMode, selectThemeMode] = useState('dark');
+
   const ThemeContext = React.createContext(themeMode);
 
   return (
@@ -37,6 +39,11 @@ function App() {
           <A.Panel>
             <h1>Flexible Grid</h1>
             <h3>Demo</h3>
+
+            <A.Panel>
+              <SampleGrid />
+            </A.Panel>
+
             <h3>Reusable Component</h3>
 
             <A.CodePanel theme={themeMode}>
