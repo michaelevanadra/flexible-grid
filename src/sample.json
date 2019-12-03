@@ -1,0 +1,22 @@
+{
+  "id": "div-1",
+  "children": [
+    {
+      "id": "div-1a",
+      "direction": "row",
+      "grow": "2",
+      "children": [
+        {
+          "id": "div-1a_i",
+          "shrink": "1"
+        },
+        {
+          "id": "div-1a_ii"
+        }
+      ]
+    },
+    {
+      "id": "div-1b"
+    }
+  ]
+}
