@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { sampleGridConfig } from '../../config/grid';
 
-import Container from './Container';
+import Parent from './Parent/parent';
 
 import * as G from './style';
 
@@ -13,14 +13,14 @@ class Grid extends Component {
         id={sampleGridConfig.id}
         direction={sampleGridConfig.direction}
       >
-        {sampleGridConfig.children &&
-          sampleGridConfig.children.map((child, index) => (
-            <Container
+        {sampleGridConfig.items &&
+          sampleGridConfig.items.map((item, index) => (
+            <Parent
               key={index}
-              id={child.id}
-              children={child.children}
-              direction={child.direction}
-              grow={child.grow}
+              id={item.id}
+              items={item.items}
+              direction={item.direction}
+              grow={item.grow}
             />
           ))}
       </G.Wrapper>

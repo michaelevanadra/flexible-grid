@@ -1,53 +1,68 @@
 export const sampleGridConfig = {
   id: 'main-parent',
   direction: 'column',
-  children: [
+  border: '1px dashed #ccc',
+  items: [
     {
       id: '1',
-      children: [
+      border: '1px dashed #ccc',
+      items: [
         {
           id: '1',
           direction: 'column',
-          children: [
+          border: '1px dashed #ccc',
+          items: [
             {
               id: '1',
-              grow: '2'
+              grow: '2',
+              border: '1px dashed #ccc'
             },
             {
-              id: '2'
+              id: '2',
+              border: '1px dashed #ccc'
             },
             {
               id: '3',
-              children: [
+              border: '1px dashed #ccc',
+              items: [
                 {
-                  id: '1'
+                  id: '1',
+                  border: '1px dashed #ccc'
                 },
                 {
-                  id: '2'
+                  id: '2',
+                  border: '1px dashed #ccc'
                 },
                 {
                   id: '3',
                   direction: 'column',
-                  children: [
+                  border: '1px dashed #ccc',
+                  items: [
                     {
                       id: '1',
-                      children: [
+                      border: '1px dashed #ccc',
+                      items: [
                         {
-                          id: '1'
+                          id: '1',
+                          border: '1px dashed #ccc'
                         },
                         {
-                          id: '2'
+                          id: '2',
+                          border: '1px dashed #ccc'
                         },
                         {
-                          id: '3'
+                          id: '3',
+                          border: '1px dashed #ccc'
                         }
                       ]
                     },
                     {
-                      id: '2'
+                      id: '2',
+                      border: '1px dashed #ccc'
                     },
                     {
-                      id: '3'
+                      id: '3',
+                      border: '1px dashed #ccc'
                     }
                   ]
                 }
@@ -57,44 +72,54 @@ export const sampleGridConfig = {
         },
         {
           id: '2',
+          border: '1px dashed #ccc',
           direction: 'column',
-          children: [
+          items: [
             {
               id: '1',
               basis: '30%',
-              order: '2'
+              order: '2',
+              border: '1px dashed #ccc'
             },
             {
               id: '2',
-              order: '1'
+              order: '1',
+              border: '1px dashed #ccc'
             }
           ]
         },
         {
-          id: '3'
+          id: '3',
+          border: '1px dashed #ccc'
         }
       ]
     },
     {
       id: '2',
-      children: [
+      border: '1px dashed #ccc',
+      items: [
         {
-          id: '1'
+          id: '1',
+          border: '1px dashed #ccc'
         },
         {
           id: '2',
           direction: 'column',
-          children: [
+          border: '1px dashed #ccc',
+          items: [
             {
               id: '1',
-              shrink: '2'
+              shrink: '2',
+              border: '1px dashed #ccc'
             },
             {
-              id: '2'
+              id: '2',
+              border: '1px dashed #ccc'
             },
             {
               id: '3',
-              grow: '2'
+              grow: '2',
+              border: '1px dashed #ccc'
             }
           ]
         }
