@@ -13,7 +13,7 @@ class NewGames extends React.Component {
         <div style={{ overflow: 'scroll' }}>
           <div style={layout.direction === 'row' ? { minWidth: '500px' } : {}}>
             <Section {...layout}>
-              <Section {...layout.items}>
+              <Section {...layout.items[0]}>
                 <Center>
                   <Card
                     style={{
@@ -27,7 +27,7 @@ class NewGames extends React.Component {
                   </Card>
                 </Center>
               </Section>
-              <Section {...layout.items}>
+              <Section {...layout.items[1]}>
                 <Center>
                   <Card
                     style={{
@@ -41,7 +41,7 @@ class NewGames extends React.Component {
                   </Card>
                 </Center>
               </Section>
-              <Section {...layout.items}>
+              <Section {...layout.items[2]}>
                 <Center>
                   <Card
                     style={{
@@ -55,7 +55,7 @@ class NewGames extends React.Component {
                   </Card>
                 </Center>
               </Section>
-              <Section {...layout.items}>
+              <Section {...layout.items[3]}>
                 <Center>
                   <Card
                     style={{
@@ -69,7 +69,7 @@ class NewGames extends React.Component {
                   </Card>
                 </Center>
               </Section>
-              <Section {...layout.items}>
+              <Section {...layout.items[4]}>
                 <Center>
                   <Card
                     style={{
@@ -83,7 +83,7 @@ class NewGames extends React.Component {
                   </Card>
                 </Center>
               </Section>
-              <Section {...layout.items}>
+              <Section {...layout.items[5]}>
                 <Center>
                   <Card
                     style={{
@@ -97,7 +97,7 @@ class NewGames extends React.Component {
                   </Card>
                 </Center>
               </Section>
-              <Section {...layout.items}>
+              <Section {...layout.items[6]}>
                 <Center>
                   <Card
                     style={{
@@ -111,7 +111,7 @@ class NewGames extends React.Component {
                   </Card>
                 </Center>
               </Section>
-              <Section {...layout.items}>
+              <Section {...layout.items[7]}>
                 <Center>
                   <Card
                     style={{

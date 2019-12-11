@@ -14,13 +14,55 @@
 export const featuredGames = {
   id: 'featured-games',
   direction: 'row-reverse',
-  wrap: 'nowrap'
+  wrap: 'nowrap',
+  items: [
+    {
+      id: 'newgame-1',
+      grow: '2'
+    },
+    {
+      id: 'newgame-2',
+      order: '1'
+    },
+    {
+      id: 'newgame-3'
+    },
+    {
+      id: 'newgame-4'
+    },
+    {
+      id: 'newgame-5'
+    }
+  ]
 };
 
 export const newGames = {
   direction: 'row',
   wrap: 'wrap',
-  items: {
-    width: '25%'
-  }
+  items: [
+    {
+      id: 'newgame-1'
+    },
+    {
+      id: 'newgame-2'
+    },
+    {
+      id: 'newgame-3'
+    },
+    {
+      id: 'newgame-4'
+    },
+    {
+      id: 'newgame-5'
+    },
+    {
+      id: 'newgame-6'
+    },
+    {
+      id: 'newgame-7'
+    },
+    {
+      id: 'newgame-8'
+    }
+  ]
 };
