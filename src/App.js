@@ -4,9 +4,10 @@ import { Container, Button, ButtonGroup } from 'reactstrap';
 import ThemeContext from './context/theme';
 
 import { GlobalStyle } from './theme/global';
-import Banner from './components/Banner';
-import FeaturedGames from './components/FeaturedGames';
-import NewGames from './components/NewGames';
+
+// Modifications
+import GenericComponent from './components/GenericComponent';
+import Sample1 from  './config/sample-data1';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -16,13 +17,9 @@ function App() {
       <GlobalStyle theme={theme} />
 
       <Container>
-        <ButtonGroup style={{ marginBottom: '15px' }}>
-          <Button onClick={() => setTheme('dark')}>Dark</Button>
-          <Button onClick={() => setTheme('light')}>Light</Button>
-        </ButtonGroup>
-        <Banner />
-        <FeaturedGames />
-        <NewGames />
+
+        <GenericComponent {...Sample1} />
+
       </Container>
     </ThemeContext.Provider>
   );
