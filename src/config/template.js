@@ -10,16 +10,20 @@ export default {
   RoundedContainer: {
     element: 'div',
     style: {
-      'border-radius': '10px'
+      'border-radius': '10px',
+      'padding': '10px'
     }
   },
   Circle: {
     element: 'div',
     style: {
-      'border-radius': '100px',
-      'width': '100px',
-      'height': '100px',
-      'border': '1px solid red'
+      'border-radius': '150px',
+      'width': '150px',
+      'height': '150px',
+      'border': '1px solid red',
+      'display': 'flex',
+      'align-items': 'center',
+      'justify-content': 'center'
     }
   },
   Title: {
