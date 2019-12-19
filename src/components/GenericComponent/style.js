@@ -5,15 +5,11 @@ import StyleType from '../../config/template';
 // TODO: Lessen this code. Need to pass a parameter to 'styled' for reusability.
 // NEED HELP!
 export const div = styled.div`
-  ${props => {
-    return StyleType[props.styleType] ? {...StyleType[props.styleType].style, ...props.style} : {...props.style};
-  }}
+  ${props => (StyleType[props.styleType] ? {...StyleType[props.styleType].style, ...props.style} : {...props.style})}
 `;
 
 export const h1 = styled.h1`
-  ${props => {
-    return StyleType[props.styleType] ? {...StyleType[props.styleType].style, ...props.style} : {...props.style};
-  }}
+  ${props => (StyleType[props.styleType] ? {...StyleType[props.styleType].style, ...props.style} : {...props.style})}
 `;
 
 export const h2 = styled.h2`
